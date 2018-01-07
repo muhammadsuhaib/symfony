@@ -1,0 +1,12 @@
+{{ include('Layout/header.html.twig') }}
+
+<a href="{{ absolute_url(asset(''))}}app_dev.php/index" class="btn btn-primary ">Back</a> <br><br>
+
+<h2>Insert Data</h2>
+
+
+{{ form_start(form) }}
+{{ form_widget(form) }}
+{{ form_end(form) }}
+
+{{ include('layout/footer.html.twig') }}

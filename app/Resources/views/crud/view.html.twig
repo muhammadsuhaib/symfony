@@ -1,0 +1,19 @@
+{{ include('Layout/header.html.twig') }}
+
+
+<a href="{{ absolute_url(asset('')) }}app_dev.php/index" class="btn btn-primary ">Back</a> <br><br>
+<h2>View Data</h2>
+
+
+<div class="list-group"></div>
+
+<a href="#" class="list-group-item active"> Data</a>
+<p class="list-group-item">{{ data.id }}</p>
+<p class="list-group-item">{{ data.name }}</p>
+<p class="list-group-item">{{ data.lastname }}</p>
+<p class="list-group-item">{{ data.address }}</p>
+<p class="list-group-item">{{ data.phonenumber }}</p>
+<p class="list-group-item">{{ data.city }}</p>
+<p class="list-group-item">{{ data.country }}</p>
+<p class="list-group-item">{{ data.dateofbirth }}</p>
+{{ include('layout/footer.html.twig') }}
